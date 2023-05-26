@@ -1,0 +1,270 @@
+%% filename: amsthdoc.tex
+%% version: 2.20.2
+%% date: 2015/03/20
+%% 
+%% Copyright 1999, 2004, 2010, 2015 American Mathematical Society.
+%%
+%% American Mathematical Society
+%% Technical Support
+%% Publications Technical Group
+%% 201 Charles Street
+%% Providence, RI 02904
+%% USA
+%% tel: (401) 455-4080
+%%      (800) 321-4267 (USA and Canada only)
+%% fax: (401) 331-3842
+%% email: tech-support@ams.org
+%% 
+%% This work may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3c
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%   http://www.latex-project.org/lppl.txt
+%% and version 1.3c or later is part of all distributions of LaTeX
+%% version 2005/12/01 or later.
+%% 
+%% This work has the LPPL maintenance status `maintained'.
+%% 
+%% The Current Maintainer of this work is the American Mathematical
+%% Society.
+%%
+%% ====================================================================
+%%
+\documentclass[a4paper, 11pt]{report}
+
+\usepackage{amssymb} 
+\usepackage{amsthm}
+\usepackage{kotex}
+\usepackage[T1]{fontenc}
+\usepackage{url}
+\usepackage[breaklinks]{hyperref}
+\usepackage{graphicx}
+\usepackage{multirow, multicol, makecell, booktabs}
+\usepackage[font=scriptsize]{caption}
+\usepackage[font=scriptsize, margin=-.3cm]{subcaption}
+%\captionsetup[subfigure]{labelfont=rm}
+
+\usepackage{setspace}
+
+\pagestyle{myheadings}
+
+% Use the same version number as for the public amsthm release.
+%\def\instrversion{2023.05.24}
+\def\instrdate{2023년 5월 24일}
+
+\title{기초정수론 (Elementary Number Theory)}
+
+\author{\instrdate\\\\[.5ex]
+ 시니어 수학교실 (Math for Seniors)\\저자: JB\\이메일: \href{mailto:mathforseniors@gmail.com}{\texttt{mathforseniors@gmail.com}})}
+\date{}
+
+\providecommand{\qq}[1]{\textquotedblleft#1\textquotedblright}
+\providecommand{\mdash}{\textemdash\penalty\hyphenpenalty}
+
+% Some item adjustments
+
+\setlength\leftmargini{2em}
+\setlength\leftmarginii{1.5em}
+\renewcommand\labelitemii{$\circ$}
+
+% Embedded \index commands are a legacy from the time when this
+% documentation was part of amsldoc. Since they don't hurt anything,
+% let's leave them in. Maybe they will become useful again in the
+% future. [mjd,2000/06/06]
+
+\chardef\bslchar=`\\ % p. 424, TeXbook
+\newcommand{\ntt}{%
+  \fontfamily\ttdefault \fontseries\mddefault \fontshape\updefault
+  \selectfont
+}
+\DeclareRobustCommand{\cn}[1]{{\ntt\bslchar#1}}
+\DeclareRobustCommand{\cls}[1]{{\ntt#1}}
+\DeclareRobustCommand{\pkg}[1]{{\ntt#1}}
+\DeclareRobustCommand{\opt}[1]{{\ntt#1}}
+\DeclareRobustCommand{\env}[1]{{\ntt#1}}
+\DeclareRobustCommand{\fn}[1]{{\ntt#1}}
+
+\providecommand{\qedsymbol}{\leavevmode
+  \hbox to.77778em{%
+  \hfil\vrule
+  \vbox to.675em{\hrule width.6em\vfil\hrule}%
+  \vrule\hfil}}
+
+%%  Provide a meta-command facility; provide an alternate escape
+%%  character so it can be used within the verbatim environment.
+
+\catcode`\|=0
+\begingroup \catcode`\>=13 % in LaTeX2e verbatim env makes > active
+\gdef\?#1>{{\normalfont$\langle$\textit{#1}$\rangle$}}
+\gdef\0{\relax}
+\endgroup
+\def\<#1>{{\normalfont$\langle$\textit{#1}$\rangle$}}
+\def\ntnote#1{{\normalfont$^{#1}$}\hangindent.5em}
+
+\hfuzz4pt \vbadness9999 \hbadness5000
+\def\latex/{{\protect\LaTeX}}
+
+\setlength{\textwidth}{210mm}\addtolength{\textwidth}{-2in}
+\setlength{\oddsidemargin}{39pt}
+\setlength{\evensidemargin}{39pt}
+\addtolength{\textwidth}{-2\oddsidemargin}
+
+\setcounter{tocdepth}{2}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\IfFileExists{mathrsfs.sty}{\usepackage{mathrsfs}}
+{\IfFileExists{euscript.sty}{\usepackage[mathscr]{euscript}}
+{\let\mathscr\mathcal}}
+
+\DeclareFontEncoding{OT2}{}{} % to enable usage of cyrillic fonts
+ \newcommand{\textcyr}[1]{%
+   {\fontencoding{OT2}\fontfamily{wncyr}\fontseries{m}\fontshape{n}%
+    \selectfont #1}}
+\newcommand{\Sha}{{\mbox{\textcyr{Sh}}}}
+
+\newcommand{\etalchar}[1]{$^{#1}$}
+
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\legendre}[2]{\left(\frac{#1}{#2}\right)}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\A}{\mathbb{A}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\PP}{\operatorname{\mathbf{Prob}}}
+\newcommand{\X}{\mathscr X}
+\newcommand{\Gal}{\operatorname{Gal}}
+\newcommand{\rk}{\operatorname{rank\,}_{\Z}}
+\newcommand{\ord}{{\operatorname{ord}}}
+\newcommand{\f}{\mathfrak f_{\chi}} 
+\newcommand{\p}{\mathfrak p} 
+\newcommand{\ff}{\mathfrak f} 
+\newcommand{\Spec}{\operatorname{Spec}}
+\newcommand{\Stab}{\operatorname{Stab}}
+\newcommand{\End}{\operatorname{End}}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\Nm}{\operatorname{\bf{Nm}}}
+\newcommand{\Ker}{\operatorname{Ker}}
+\newcommand{\G}{\varGamma}
+\newcommand{\kbar}{{\bar k}}
+\newcommand{\isom}{\cong}
+\newcommand{\ph}{\varphi}
+\renewcommand{\<}{\langle}
+\renewcommand{\>}{\rangle}
+\renewcommand{\P}{\mathbb{P}}
+\newcommand{\N}{\mathfrak{F}}
+
+\newtheorem{thm}{Theorem}[section] 
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{pred}[thm]{Prediction}
+%
+\theoremstyle{definition}
+\newtheorem{example}[thm]{Example}
+\newtheorem{remark}{Remark}
+%
+%\numberwithin{equation}{section}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Double spaceing for the whole article
+
+\doublespacing
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\maketitle
+\markboth{기초정수론}{기초정수론}
+
+\begingroup
+\small
+\tableofcontents
+\endgroup
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage %%%%%%%%%%%%%%%%%%%%
+
+\chapter{강의소개와 사전지식}
+
+본 강좌는 정수론의 기초와 그를 이용한 작은 개인/그룹과제 해결을 통해
+수학에 대한 관심과 소양을 얻기위해 만들어졌습니다. 더 중요한 목적은 
+실생활에서의 응용외에 하나의 철학으로 삶의 의지와 의미를 찾기위함에 
+있습니다.
+
+\section{이상적인 수강생 모델}
+
+강좌는 아래와 같은 조건에 해당하시는 수강생들이 공부하기에 최적화되어있습니다.
+
+\begin{itemize}
+  \item 은퇴를 하셨거나 여유시간이 많으나 의미있는 활동을 찾기힘드신 분 중
+  지적 성취감을 느끼고 싶으신 분.
+  \item 평소 수학/과학/공학에 관심이 많으신 분.
+  \item 자극적이고 단편적인 뉴스, 유튜브등의 미디어에 중독되어 이를 극복하고자
+  하시는 분.
+  \item 논리적인 사고력을 키워 토론에서 자신의 의견을 합리적으로 표현하고자
+  하시는 분.
+  \item 수학을 통해 세상과 신을 이해하고 싶으신 분.
+\end{itemize}
+
+\section{주의사항}
+
+본 강좌에 관한 주의사항을 아해와 같습니다.
+
+\begin{itemize}
+  \item 정수론의 소양과 관련이 적은 주제에 대해 지나치게 엄밀한 논리가 
+  필요한 부분은 효과적인 강의를 위해 가급적 피하겠습니다.
+  \item 수학용어들은 영어번역을 같이 표기하겠습니다. 우리가 쓰는 한글 
+  수학용어는 가끔 혼동을 일으키곤 합니다. 일례로 ‘소수(小數)’와 ‘소수(素數)’
+  는 동음이의어로 한글로만 썼을때 상당한 혼란을 가져올 수 있습니다. 그리고, 
+  차후 논문이나 원서를 일으실때 미리 용어를 영어로 알아두시는것도 좋을꺼라 
+  생각합니다.
+  \item 마지막으로 가장 중요한 주의사항은 \textbf{최대한 본인들이 직접 문제를 해결
+  하려고 노력해야합니다.} 이것은 절대적인 요소입니다. 수학은 미디어에서 보여지는 것과 
+  달리 실제로는 수많은 시행착오와 오랜 시간의 고민을 통해서 답을 찾을 수 있습니다. 
+  만약 참을 수 없을 정도로 오래 노력해도 답을 얻을 수 없을때 본 강사나 동료들과의 
+  대화에서 힌트를 얻기를 바랍니다.
+\end{itemize}
+
+\section{강의토픽}
+
+본 강좌에서 공부할 토픽들을 다음과 같습니다.
+
+\begin{itemize}
+  \item 수체계: 정수(Integers), 유리수(Rational numbers), 실수(Real Numbers), 
+  복소수(Complex Numbers), 대수적 수(Algebraic Numbers), 
+  초원수(Transcendental Numbers) 등.
+  \item 연산(Operations), 모듈러 연산(Modular Arithmetic)
+  \item 방정식(Equations), 함수(Functions)
+\end{itemize}
+
+\section{사전지식}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{thebibliography}{[MDF]}
+
+\raggedright
+
+\bibitem[AF]{AF} AMS Author FAQ,
+  \url{http://www.ams.org/authors/author-faq}
+
+\bibitem[MDF]{MDF} The \pkg{mdframed} package,
+  Marco Daniel and Elke~Schubert, 2013/07/01, v1.9b,
+%  \url{http://mirror.ctan.org/macros/latex/contrib/mdframed/mdframed.pdf}
+  \url{http://mirror.ctan.org/macros/latex/contrib/mdframed}
+
+\bibitem[NDS]{NDS} The \pkg{needspace} package,
+  Peter Wilson, 2010/09/12, v1.3d,
+  \url{http://mirror.ctan.org/macros/latex/contrib/needspace}
+
+\bibitem[THT]{THT} \pkg{Thmtools} Users' Guide,
+  Ulrich M. Schwarz, 2014/04/21 v66,
+%  \url{http://mirror.ctan.org/macros/latex/exptl/thmtools/thmtools.pdf}
+  \url{http://mirror.ctan.org/macros/latex/exptl/thmtools}
+
+\end{thebibliography}
+
+\end{document}
