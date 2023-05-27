@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1685213803 "/home/egalois/MathforSeniors/textbooks/ent/amsthdoc.tex" "amsthdoc.pdf" "amsthdoc" 1685213805
-  "/home/egalois/MathforSeniors/textbooks/ent/amsthdoc.tex" 1685213802 14114 ba6ff0a3fd08b4b84362a62a7bcc85b0 ""
+["pdflatex"] 1685215398 "/home/egalois/MathforSeniors/textbooks/ent/amsthdoc.tex" "amsthdoc.pdf" "amsthdoc" 1685215399
+  "/home/egalois/MathforSeniors/textbooks/ent/amsthdoc.tex" 1685215398 14200 683c8ce826cd39b10f46a0b46dfb926c ""
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -344,13 +344,13 @@
   "/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1624720292 5184918 edc7760058d1085fc27d2bf72f6d6bd9 ""
   "/usr/local/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1624720317 2816107 b6af25ff7aa3d58e820f5b75bb926a16 ""
   "/usr/local/texlive/2021/texmf.cnf" 1624720287 455 5b996dcaa0eb4ef14a83b026bc0a008c ""
-  "amsthdoc.aux" 1685213804 1717 dc28ff6eb787865cd8b0ed8d1b0b6b7c "pdflatex"
-  "amsthdoc.out" 1685213804 923 afd498816c717cbfdde97a63b2040ce4 "pdflatex"
-  "amsthdoc.tex" 1685213802 14114 ba6ff0a3fd08b4b84362a62a7bcc85b0 ""
-  "amsthdoc.toc" 1685213804 594 4cdc9fb4bfc66b866d7c4b9fb7a4cc2d "pdflatex"
+  "amsthdoc.aux" 1685215399 1717 dc28ff6eb787865cd8b0ed8d1b0b6b7c "pdflatex"
+  "amsthdoc.out" 1685215399 923 afd498816c717cbfdde97a63b2040ce4 "pdflatex"
+  "amsthdoc.tex" 1685215398 14200 683c8ce826cd39b10f46a0b46dfb926c ""
+  "amsthdoc.toc" 1685215399 594 4cdc9fb4bfc66b866d7c4b9fb7a4cc2d "pdflatex"
   (generated)
-  "amsthdoc.pdf"
-  "amsthdoc.log"
   "amsthdoc.aux"
+  "amsthdoc.log"
+  "amsthdoc.pdf"
   "amsthdoc.out"
   "amsthdoc.toc"
