@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1686796110 "/home/egalois/MathforSeniors/textbooks/ent/ElementaryNumberTheory.tex" "ElementaryNumberTheory.pdf" "ElementaryNumberTheory" 1686796112
-  "/home/egalois/MathforSeniors/textbooks/ent/ElementaryNumberTheory.tex" 1686796110 33465 ae0feb94d99beb05049264e1838b27f9 ""
+["pdflatex"] 1686796453 "/home/egalois/MathforSeniors/textbooks/ent/ElementaryNumberTheory.tex" "ElementaryNumberTheory.pdf" "ElementaryNumberTheory" 1686796455
+  "/home/egalois/MathforSeniors/textbooks/ent/ElementaryNumberTheory.tex" 1686796453 33536 f214c2add48b8bb83f486246a445f6ff ""
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -379,13 +379,13 @@
   "/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1624720292 5184918 edc7760058d1085fc27d2bf72f6d6bd9 ""
   "/usr/local/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1624720317 2816107 b6af25ff7aa3d58e820f5b75bb926a16 ""
   "/usr/local/texlive/2021/texmf.cnf" 1624720287 455 5b996dcaa0eb4ef14a83b026bc0a008c ""
-  "ElementaryNumberTheory.aux" 1686796111 2806 4c1d37aca39a11fd9f5811884564494d "pdflatex"
-  "ElementaryNumberTheory.out" 1686796111 2625 5b25f2ff634dab06fa5dffd6c8209465 "pdflatex"
-  "ElementaryNumberTheory.tex" 1686796110 33465 ae0feb94d99beb05049264e1838b27f9 ""
-  "ElementaryNumberTheory.toc" 1686796111 1319 5a1030ecf0f3ad0579e5d1e4451480c9 "pdflatex"
+  "ElementaryNumberTheory.aux" 1686796454 2806 4c1d37aca39a11fd9f5811884564494d "pdflatex"
+  "ElementaryNumberTheory.out" 1686796454 2625 5b25f2ff634dab06fa5dffd6c8209465 "pdflatex"
+  "ElementaryNumberTheory.tex" 1686796453 33536 f214c2add48b8bb83f486246a445f6ff ""
+  "ElementaryNumberTheory.toc" 1686796454 1319 5a1030ecf0f3ad0579e5d1e4451480c9 "pdflatex"
   (generated)
-  "ElementaryNumberTheory.pdf"
-  "ElementaryNumberTheory.toc"
-  "ElementaryNumberTheory.log"
-  "ElementaryNumberTheory.out"
   "ElementaryNumberTheory.aux"
+  "ElementaryNumberTheory.out"
+  "ElementaryNumberTheory.log"
+  "ElementaryNumberTheory.toc"
+  "ElementaryNumberTheory.pdf"
