@@ -624,22 +624,26 @@ $b \neq 0$입니다. 대우를 쓰면 간단히 증명되겠죠?
 약수에 관한 몇가지 성질을 알아보겠습니다. 먼저 임의의 소수 $p \nmid 1$ 왜냐하면 $p > 1$이므로 
 $1 = p\cdot b$를 만족하는 자연수 $b$는 존재하지 않기때문이죠. 모든 $a \in \mathbb{N}$에
 대해 $a = 1\cdot a$이므로 $1 \mid a$이고 $a \mid a$. 또한 $a, b, c \in \mathbb{N}$에 대해
-\begin{equation}
+\begin{equation}\label{chain_division}
 a \mid b \text{ 이고 } b \mid c \implies a \mid c
 \end{equation}
 그리고,
-\begin{equation}
+\begin{equation}\label{cancellation_division}
 ac \mid bc \implies a \mid b
 \end{equation}
 마지막으로,
-\begin{equation}
+\begin{equation}\label{sum_division}
 a \mid b \text{ 이고 } a \mid c \implies a \mid (b+c).
 \end{equation}
-셋 모두 당연해 보이고, 증명도 정의만 따라가면 어렵지 않아요. 시간나실때 직접 한번 증명해보세요.
+셋 모두 당연해 보이고, 증명도 정의만 따라가면 어렵지 않아요. 시간나실때 직접 한번 증명해보세요. 
+다만 \eqref{sum_division}의 역(Converse)은 성립되지 않습니다: 역은 성립하지 않는 예를 찾아보세요. 
 
 \begin{exercise}
   $0$의 약수는 무엇일까요? 
 \end{exercise}
+
+다음 섹션에서 자연수 집합 $\mathbb{N}$을 정수(Integers) 집합으로 연산들과 함께 확장하고 그 위에서
+더 많은 성질을 알아봅시다.
 
 \section{정수(Integers)와 방정식(Equations)}
 
