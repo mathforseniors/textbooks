@@ -9,6 +9,6 @@
 \contentsline {section}{\numberline {2.1}자연수(Natural Numbers)와 연산들(Operations)}{8}{section.2.1}%
 \contentsline {section}{\numberline {2.2}자연수(Natural Numbers)와 방정식(Equations)}{10}{section.2.2}%
 \contentsline {section}{\numberline {2.3}정수(Integers)와 방정식(Equations)}{13}{section.2.3}%
-\contentsline {section}{\numberline {2.4}유리수(Rational Numbers)와 방정식(Equations)}{13}{section.2.4}%
-\contentsline {section}{\numberline {2.5}실수(Real Numbers)와 방정식(Equations)}{13}{section.2.5}%
-\contentsline {section}{\numberline {2.6}복소수(Complex Numbers)}{13}{section.2.6}%
+\contentsline {section}{\numberline {2.4}유리수(Rational Numbers)와 방정식(Equations)}{14}{section.2.4}%
+\contentsline {section}{\numberline {2.5}실수(Real Numbers)와 방정식(Equations)}{14}{section.2.5}%
+\contentsline {section}{\numberline {2.6}복소수(Complex Numbers)}{14}{section.2.6}%
